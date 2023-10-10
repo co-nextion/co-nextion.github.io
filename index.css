@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    max-width:1400px;
+    width:100%;
+    margin:auto;
+    background-color:rgb(30, 30, 30);
+    
+}
+
+
+header{
+    padding-top:10px;
+}
+.logo{
+    width: 140px; 
+    float:left;
+    padding-left:10px;
+}
+.texts{
+    float:left;
+    width:90%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-top:30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.text{
+    width:25%;
+    float:left;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0);
+    transition: background-color 0.5s;
+}
+
+.text a{
+    display: block;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 254, 254, 0);
+    font-size: 18px;
+    height:80px;
+    padding:30px 30px 0px 0px;
+    transition: background-color 0.5s;
+}
+
+
+.text a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.text a:active{
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.clear{
+    clear:left;
+}
+
+
+
+.contents{
+    float:left;
+    margin-top:100px;
+    text-align: center;
+    width: 100%;
+}
+.contents h1{
+    color:rgb(249, 249, 249);
+    font-weight: normal;
+    font-size:40px
+}
+.english{
+    color:rgb(255, 255, 255);
+    font-size:15px;
+    font-weight:bold;
+    margin-top: 5px;
+    margin-bottom:75px;
+    letter-spacing: 0.1em;
+    width:90%;
+}
+.words p{
+    color:rgb(255, 255, 255);
+    letter-spacing: 0.12em;
+    width:80%;
+}
+
+.ab{
+    font-size:14px;
+}
+
+.words{
+    margin-bottom:100px;
+}
+
+.cont h2{
+    color:white;
+    font-weight: normal;
+    font-size:24px;
+    letter-spacing: 0.1em;
+    margin-bottom:10px;
+}
+
+.phots{
+    display: flex;
+    flex-wrap:wrap;
+    width:95%;
+}
+
+.ph{
+    flex:auto;
+    width: 25%;
+    padding:5px;
+}
+
+.ph h3{
+    font-size:18px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.bu h3{
+    color:rgb(135, 212, 222)
+}
+
+.or h3{
+    color:rgb(255, 163, 71)
+}
+
+.pi h3{
+    color:rgb(246, 163, 239)
+}
+
+.gr h3{
+    color:rgb(130, 254, 141)
+}
+
+.cont p{
+    margin-top:15px;
+    width:80%;
+    color:white;
+    margin-bottom:30px;
+}
+.bc{
+    font-size:16px;
+}
+
+.cont{
+    border-bottom:1px solid white;
+}
+
+.cont2 h2{
+    letter-spacing: 0.1em;
+    margin-top:100px;
+    color:white;
+    font-weight: normal;
+    font-size:24px;
+}
+
+
+.cont2 p{
+    margin-top:15px;
+    width:80%;
+    color:white;
+    margin-bottom:30px;
+    font-size:16px;
+}
+
+
+.description{
+    display:flex;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    width:95%;
+    margin-bottom:40px;
+    border-bottom: 1px solid white;
+}
+
+.des{
+    margin-top:0px;
+    width: 20%;
+    padding:5px;
+}
+
+.cont2 h3{
+    margin-top:10px;
+    font-weight: normal;
+    color:white;
+    font-size:19px;
+    margin-bottom:5px;
+    width:90%;
+}
+
+.cont2 video{
+    width:60%;
+    margin-bottom:10px;
+}
+
+.de a{
+    color:rgb(253, 143, 0);
+}
+
+
+
+.b1 a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    letter-spacing: 0.12em;
+    margin-top:70px;
+    margin-bottom:30px;
+    font-weight:bold;
+    padding-left:10px;
+    width:180px;
+}
+
+
+
+.b1 ::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background: #ffffff;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;  /*変形の時間*/
+    }
+    
+    .b1 :hover::after {
+    transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+    transform-origin: left top; /*左から右に向かう*/
+    }
+    
+    .b2 a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        letter-spacing: 0.12em;
+        margin-bottom:30px;
+        font-weight:bold;
+        padding-left:10px;
+        width:230px;
+    }
+    
+    
+    
+    .b2 ::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 1.5px;
+        background: #ffffff;
+        bottom: -1px;
+        transform: scale(0, 1);
+        transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+        transition: transform 0.3s;  /*変形の時間*/
+        }
+        
+        .b2 :hover::after {
+        transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+        transform-origin: left top; /*左から右に向かう*/
+        }
+
+    
+        .b3 a {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+            letter-spacing: 0.12em;
+            margin-bottom:120px;
+            font-weight:bold;
+            padding-left:10px;
+            width:230px;
+        }
+        
+        .cont2 span{
+            color:orange;
+        }
+        
+        .b3 ::after {
+            position: absolute;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 1.5px;
+            background: #ffffff;
+            bottom: -1px;
+            transform: scale(0, 1);
+            transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+            transition: transform 0.3s;  /*変形の時間*/
+            }
+            
+            .b3 :hover::after {
+            transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+            transform-origin: left top; /*左から右に向かう*/
+            }
+
+
