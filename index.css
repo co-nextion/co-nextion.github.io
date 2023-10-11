@@ -302,5 +302,11 @@ header{
             transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
             transform-origin: left top; /*左から右に向かう*/
             }
+footer p{
+    color:white;
+    font-size:small;
+    padding-bottom:20px;
+    padding-left:20px;
+}
 
 
